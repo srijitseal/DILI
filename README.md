@@ -1,4 +1,4 @@
-# DILI - Drug-Induced Liver Injury Prediction
+# DILIPredictor - Drug-Induced Liver Injury Prediction
 
 ## Overview
 DILI is a comprehensive repository aimed at enhancing the early detection of Drug-Induced Liver Injury (DILI) through the integration of predicted in vivo and in vitro data. This project utilizes advanced machine learning models and chemical informatics to predict the likelihood of DILI for various compounds.
@@ -6,8 +6,8 @@ DILI is a comprehensive repository aimed at enhancing the early detection of Dru
 ## Features
 - Integration of in vivo and in vitro data for improved DILI prediction.
 - Utilizes pharmacokinetic parameters, structural fingerprints, and physicochemical parameters.
-- Eleven proxy-DILI labels from datasets such as mitochondrial toxicity, bile salt export pump inhibition, and preclinical rat hepatotoxicity studies.
-- Available as both a command-line interface (CLI) and a Python library.
+- Nine proxy-DILI labels from datasets such as mitochondrial toxicity, bile salt export pump inhibition, and preclinical rat hepatotoxicity studies and two pharmacokinetic parameters.
+- Available as online tools, local implementation and a Python library.
 
 ## Installation
 
@@ -43,9 +43,18 @@ if __name__ == '__main__':
     print(result)
 ```
 
+## Using local implementation
+Download key files from https://github.com/srijitseal/DILI/raw/main/local_implementation.zip and run locally!
+
+## Run Online on Server #1 v4.0.0 [Recommended]
+If you prefer to use the predictor online via Uppsala University SciLifeLab Serve: https://dili.serve.scilifelab.se/
+
+## Run Online on Server #2 v4.0.0
+If you prefer to use the predictor online via streamlit: https://dilipredictor.streamlit.app/
+
 # Repository Structure
 - `data/` : Contains datasets used in the project.
-- `00_Create_livtox_dili_datasets.ipynb` : Notebook to create DILI datasets.
+- `00_Create_livtox_dili_datasets.ipynb` : Notebook to curate DILI datasets.
 - `01_Split_Train_Test_Datasets.ipynb` : Notebook to split datasets into training and testing sets.
 - `02_Explore_Chemical_Spaces_PCA_TSNE-.ipynb` : Notebook to explore chemical spaces using PCA and t-SNE.
 - `03a_Create_Cmax_models.ipynb` : Notebook to create Cmax models.
@@ -67,7 +76,7 @@ if __name__ == '__main__':
 ## Citation
 If you use DILI Predictor in your work, please cite:
 
-Improved Early Detection of Drug-Induced Liver Injury by Integrating Predicted in vivo and in vitro Data; Srijit Seal, Dominic P. Williams, Layla Hosseini-Gerami, Ola Spjuth, Andreas Bender bioRxiv 2024.01.10.575128; doi: https://doi.org/10.1101/2024.01.10.575128
+Improved Early Detection of Drug-Induced Liver Injury by Integrating Predicted in vivo and in vitro Data; Srijit Seal, Dominic P. Williams, Layla Hosseini-Gerami, Manas Mahale, Anne E. Carpenter, Ola Spjuth, Andreas Bender bioRxiv 2024.01.10.575128; doi: https://doi.org/10.1101/2024.01.10.575128
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
