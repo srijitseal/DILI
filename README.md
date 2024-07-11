@@ -12,7 +12,7 @@ DILI is a comprehensive repository aimed at enhancing the early detection of Dru
 ## Installation
 
 ### Using PyPI
-You can install the DILI Predictor using pip: `pip install dilipred`
+You can install the DILI Predictor using pip: `pip install dilipred`. ***Please use Python <3.12, >=3.9***
 
 ### Building from Source
 You can also build from source using python-poetry:
