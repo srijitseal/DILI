@@ -25,7 +25,7 @@ You can also build from source using python-poetry:
 ## Usage
 
 ### Running DILIPredictor as CLI
-To get started with the CLI, use: `dili -h`
+To get started with the CLI, use: `dilipred -h`
 
 ### Predicting DILI for a Single Molecule
 Select from the sidebar to predict DILI for a single molecule.
